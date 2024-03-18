@@ -15,7 +15,6 @@ function App() {
           throw Error("Did not get data");
         }
         const data = await response.json();
-        console.log(data)
         setItems(data);
       } catch (error) {
         console.error(error);
